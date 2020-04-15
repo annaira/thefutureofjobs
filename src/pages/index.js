@@ -1,19 +1,24 @@
 import React from "react"
-import { Link } from "gatsby"
-import Header from "../components/header"
+import Header from "../components/Header"
+import Footer from "../components/Footer"
+import Post from "../components/Post"
 
 const Index = () => {
   return (
     <div>
-       <Header title="Header of Index page"/>
-      <div>
-        <h1>First Gatsby Project</h1>
-        <Link to="/test">Navigate to Test</Link>
+      <Header />
+      <div className="container">
+        <div className="row justify-content-md-center">
+          <div className="col-10">
+            <Post
+              title="This is our first post."
+              excerpt="We are writing something to be displayed in out excerpt."
+            />
+          </div>
+        </div>
       </div>
-      <img
-        src="https://www.myzitate.de/img/og/der-grosse-gatsby.jpg"
-        width="780"
-      />
+
+      <Footer />
     </div>
   )
 }
