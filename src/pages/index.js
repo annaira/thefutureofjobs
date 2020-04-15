@@ -14,6 +14,22 @@ const Index = () => {
               title="This is our first post."
               excerpt="We are writing something to be displayed in out excerpt."
             />
+            <Post
+              title="This is our first post."
+              excerpt="We are writing something to be displayed in out excerpt."
+            />
+            <Post
+              title="This is our first post."
+              excerpt="We are writing something to be displayed in out excerpt."
+            />
+            <Post
+              title="This is our first post."
+              excerpt="We are writing something to be displayed in out excerpt."
+            />
+            <Post
+              title="This is our first post."
+              excerpt="We are writing something to be displayed in out excerpt."
+            />
           </div>
         </div>
       </div>
