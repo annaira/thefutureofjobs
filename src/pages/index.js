@@ -8,10 +8,13 @@ const Index = ({ data }) => {
 
   return (
     <PrimaryLayout column="col-8">
-      <Post
-        title="This is our first post."
-        excerpt="We are writing something to be displayed in out excerpt."
-      />
+      {data.allMarkdownRemark.nodes.map(node => (
+        <Post
+          title={node.frontmatter.title}
+          excerpt={node.excerpt}
+          image={node.frontmatter.image}
+        />
+      ))}
     </PrimaryLayout>
   )
 }
