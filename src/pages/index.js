@@ -13,6 +13,7 @@ const Index = ({ data }) => {
           title={node.frontmatter.title}
           excerpt={node.excerpt}
           image={node.frontmatter.image}
+          readMore={node.fields.slug}
         />
       ))}
     </PrimaryLayout>
@@ -33,6 +34,9 @@ export const query = graphql`
         }
         excerpt
         html
+        fields {
+          slug
+        }
       }
     }
   }
