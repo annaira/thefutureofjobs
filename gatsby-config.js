@@ -31,6 +31,6 @@ module.exports = {
     },
   ],
   siteMetadata: {
-    title: "Gatsby-Bootstrap"
+    title: "The Future of Jobs"
   }
 }
